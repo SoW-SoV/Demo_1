@@ -1,0 +1,28 @@
+GET https://localhost:7055/reports
+
+###
+
+POST https://localhost:7055/reports
+Content-Type : application/json
+
+{
+  "DateReport" : "2026-01-01",
+  "StartSumm" : 100,
+  "OnlineRevenue" : 100,
+  "CashRevenue" : 100
+}
+
+###
+
+PUT https://localhost:7055/reports/0eacd49a-ea41-42e7-98f4-4b0143ee179a
+Content-Type : application/json
+
+{
+  "OnlineRevenue" : 200,
+  "CashRevenue" : 2500
+}
+
+### Удаление с переменной
+@reportId = 60a141bc-c963-4b1b-b12d-2e3d8eea56af
+
+DELETE https://localhost:7055/reports/{{reportId}}

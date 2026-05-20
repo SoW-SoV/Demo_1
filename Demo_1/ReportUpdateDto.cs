@@ -1,0 +1,1 @@
+public record ReportUpdateDto(DateOnly? DateReport, decimal? StartSumm, decimal? OnlineRevenue, decimal? CashRevenue);

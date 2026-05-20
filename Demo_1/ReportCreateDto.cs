@@ -1,0 +1,1 @@
+public record ReportCreateDto(DateOnly DateReport, decimal StartSumm, decimal OnlineRevenue, decimal CashRevenue);
